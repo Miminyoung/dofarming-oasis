@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>dofarming oasis</title>
+	<link href='https://fonts.googleapis.com/css?family=Petit Formal Script' rel='stylesheet'>
+
+	<style>
+    @font-face { font-family: 'Pretendard-Semibold';src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-semibold.woff') format('woff');font-weight: 800;font-style: Bold;}
+
+	body,h1,h2,h3,h4,h5,h6,p,ul,nav{margin: 0; padding: 0}
+	html{font-family: 'Pretendard-Semibold';
+			line-height: 1.7; letter-spacing: -0.5px;
+			scroll-behavior: smooth;}
+	body{background: black; word-break: keep-all;}
+	img{width: 100%; display: block;}
+
+	nav{color: red; background: black; 
+		;position: fixed; width: 100%; z-index: 1000;}
+	.nav-flex{display: flex; justify-content: space-between;}
+	.logo{line-height: 70px}
+	.menu li{list-style-type: none; width: 100px;line-height: 70px;}
+	.menu li a{display: block; padding: 0px; margin: 0;
+				text-decoration: none; ;color: red; text-align: center;}
+	.menu li a:hover{display: block;color: yellow;}
+
+	header{position: relative; padding-top: 70px}
+	h1{font-size: 18rem;line-height: 1.1;color: red; text-align: center;
+		position: absolute; top: 55%; left: 52%;transform: translate(-50%, -50%);}
+
+	h3{color: #24FF00; text-shadow: -1.8px -1.8px 0 #FF0000, 1.8px -1.8px 0 #FF0000, -1.8px 1.8px 0 #FF0000, 1.8px 1.8px 0 #FF0000;
+		font-size:3rem; line-height: 1.3;font-weight:bold; text-align: left;
+		padding-top: 270px; padding-right: 200px}
+	h4{color: yellow; text-shadow: -1.8px -1.8px 0 #FF0000, 1.8px -1.8px 0 #FF0000, -1.8px 1.8px 0 #FF0000, 1.8px 1.8px 0 #FF0000;
+		font-size:3rem; line-height: 1.2;font-weight:bold; text-align: left;}
+	h5{color: yellow; text-shadow: -1.8px -1.8px 0 #D70074, 1.8px -1.8px 0 #D70074, -1.8px 1.8px 0 #D70074, 1.8px 1.8px 0 #D70074;
+		font-size:3rem; line-height: 1.2;font-weight:bold; text-align: center;}
+
+	section{padding: 200px 0px 200px 0px}
+	footer{}
+	
+	.petit-formal-script-regular {font-family: "Petit Formal Script", cursive;font-weight: 100;font-style: normal;}
+
+	.wrap{width: 1712px; margin: auto;position: relative; overflow: hidden;}
+	.wrap2{width: 1200px; margin: auto;position: relative; overflow: hidden;}
+	.wrap3{width: 1500px; margin: auto;position: relative; overflow: hidden;}
+
+	.notice-t, .notice-c{color: red; background: black;text-align: center;
+						width: 700px;padding: 100px 100px 100px 100px}
+	.notice-t{font-size: 3rem; font-style: bold;line-height: 1.4}
+	.notice-c{font-size: 1.6rem;line-height: 1.6}
+
+	.explain-c{font-size: 2rem;line-height: 1.5;padding-top: 50px;}
+	
+
+	.container{position: relative; text-align: center;}
+	.container2{position: relative; text-align: center; width: 1000px}
+	.container3{position: relative; text-align: center; z-index: 3;}
+	.text{position: absolute;top: 50%; left: 50%; transform: translate(-50%, -50%);z-index: 2;}
+	.text2{position: absolute;top: 50%; left: 50%; transform: translate(-50%, -50%);}
+
+	.image-container {width:100%; height:160vh; position: relative;}
+	.image-container img {width:100%; height:100%; object-fit:cover;
+						position: absolute;top: 0;left: 0;}
+	.image-container2 {width:100%; height:100vh; position: relative;}
+	.image-container2 img {width:100%; height:100%; object-fit:cover;
+						position: absolute;top: 0;left: 0;}
+	.image-container3 {width:100%; height:100vh; position: relative; z-index: 1;}
+	.image-container3 img {width:100%; height:100%; object-fit:cover;
+						position: absolute;top: 0;left: 0; z-index: 1;}
+	.top-image {z-index: 2;}
+	.bottom-image {z-index: 1;}
+
+	.column-layout {display: flex;flex-wrap: wrap;}
+	.left-column {flex: 1;break-inside: avoid;}
+	.right-column {width: 500px;break-inside: avoid;}
+	.right-column2 {width: 750px;break-inside: avoid;}
+
+	.yellowline{width: 100%; height: 70px; background-color: yellow;
+  				overflow: visible;position: relative;
+  				box-shadow: 0 0px 15px rgba(0, 0, 0, 0.5);}
+  	.lineanime{position: absolute;top: -30%;right: 100%;transform: translateX(-50%);	   white-space: nowrap;animation: moveText 60s linear infinite ;}
+	.linepetit{font-size:4rem;}
+	.userguide{color: yellow;font-size: 1.3rem;line-height: 2.2;
+				padding: 100px 100px 100px}
+	@keyframes moveText {0% {transform: translateX(100%);}100% {transform: translateX(-100%);}}
+	h6{color: red; background: lightgrey;
+		text-shadow: -1.8px -1.8px 0 #FFF500, 1.8px -1.8px 0 #FFF500, -1.8px 1.8px 0
+		#FFF500, 1.8px 1.8px 0 #FFF500;
+		font-size:4.5rem; line-height: 1.2;font-weight:900;font-style: extraBold;
+		padding: 170px 150px 100px}
+	.h7{color: #24FF00;font-size: 9rem;line-height: 1.1;text-align: left;padding: 10px}
+	.explain-h7{color:red; background: white; text-align: center;
+				text-shadow: -1px -1px 0 #24FF00, 1px -1px 0 #24FF00, -1px 1px 0
+		#24FF00, 1px 1px 0 #24FF00;
+				font-size: 1.5rem; line-height: 1.5;
+				padding:40px 100px; position: relative; z-index: 1; }
+	.explain-h7:before {content: "";position: absolute;
+						top: 0%; left: 0%; width: 100%; height: 100%;
+						mix-blend-mode: difference;
+						background-image: url("brain.gif");
+						background-size: 120% ;background-position: center;
+						mix-blend-mode: difference;z-index: -1;}
+
+	.green-dot {position:relative; left:0; top:-10px; width: 100%;height: 100%;
+			background-image: url('greendot.png');background-size: cover;
+			z-index: 9999;}
+
+	.greenline::before{content:""; display: block; width: 100%; height: 1px;
+    							background-color: #24FF00; margin: 0 0 180px;}
+	.greenline::after{content:""; display: block; width: 100%; height: 1px;
+    							background-color: #24FF00;margin: 120px 0 0;}
+
+	</style>
+
+</head>
+<body>
+	<nav>
+		<div class="wrap2 nav-flex">
+			<div class="logo">DOFARMING OASIS</div>
+			<ul class="menu nav-flex">
+				<li><a href="#d1">NOTICE</a></li>
+				<li><a href="#d2">USER GUIDE</a></li>
+				<li><a href="#d3">PRODUCT</a></li>
+				<li><a href="#d4">CAUTION</a></li>
+			</ul>	
+		</div>
+	</nav>
+
+	<header>
+		<div class="wrap">
+	    	<img src="header.png">
+	    	<h1 class="petit-formal-script-regular">dofarming oasis</h1>
+	    </div>
+	</header>
+
+	<section id="d1">
+		<div class="wrap container">
+			<div class="image-container">
+				<img src="glitch.gif" alt="glitch">
+			</div>
+			<div class="text">
+			<h2 class="wrap2 notice-t">2030년, 세계 보건기구가 발표한 ‘숏폼 제한’ 조치에 대한 안내</h2>
+			<p class="wrap2 notice-c">각 국가의 정부들은 짧고 자극적인 영상으로 쉽고 빠르게 쾌감을 주는 숏폼 콘텐츠가 사람들의 정신건강에 위해를 끼치는 상황의 심각성을 파악하였습니다.<br><br>결국 2030년, 세계 보건기구는 도파민 과다 분비로 인한 건강 문제를 최소화하기 위해 숏폼 플랫폼의 하루 시청 시간 10분, 한달 업로드 횟수 단 1회로 제한하는 강력한 조치를 취했습니다.</p>
+		</div>
+		</div>
+	</section>
+
+	<!-- <section>
+		<div class="wrap">
+			<div class="image-container2">
+				<img src="eyes.gif" alt="eyes" class="bottom-image">
+				<img src="redcircle.png" alt="redcircle" class="top-image">
+				<div class="text">
+					<h3>도파밍 오아시스에서는 고객님들의 은밀한 욕망을 위해 아래와 같은 서비스를 제공하고 있습니다.</h3>
+				</div>
+			</div>
+		</div>
+	</section> -->
+
+	<section>
+		<div class="wrap container">
+			<img src="redcircle.png" class="image-container3">
+		<div class="wrap column-layout text2">
+			<img src="eyes.gif" class="left-column">
+			<div class="right-column2">
+				<h3>도파밍 오아시스에서는 고객님들의 은밀한 욕망을 위해 아래와 같은 서비스를 제공하고 있습니다.</h3>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="wrap2 column-layout">
+				<img src="human.gif" class="left-column">
+			<div class="right-column">
+				<h4>숏폼 컨텐츠의 이용권을 <br>제공합니다.</h4>
+				<p class="explain-c" style="color: red;">부족한 도파민에 목말랐던 분들을 위해 준비했습니다. 더이상 아쉬워하지 마세요! 제한에서 벗어나 숏폼을 마음껏 즐길 수 있어요.</p>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="wrap2 container">
+			<img src="oasis.gif">
+		<div class="text">
+			<h5>유튜브/인스타그램/틱톡 더이상 감질나게 이용하지 마세요.</h5>
+			<p class="explain-c" style="color: yellow;">이용권을 구매하면 제공되는 도파밍 오아시스만의 서버로 도파민에 목마른 여러분을 도와드릴게요!</p>
+		</div>
+		</div>
+	</section>
+
+	<section id="d2">
+	<div class="wrap">
+		<div class="yellowline">
+  			<div class="lineanime petit-formal-script-regular linepetit">off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit</div>
+		</div>
+		<div class="yellowline">
+  			<div class="lineanime petit-formal-script-regular linepetit">off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit</div>
+		</div>
+		<div class="yellowline">
+  			<div class="lineanime petit-formal-script-regular linepetit">off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit</div>
+		</div>				
+		<div class="wrap column-layout">
+			<h6 class="left-column">도파민 오아시스<br>이용 안내</h6>
+			<ol class="right-column2 userguide">
+  				<li>이용권 사용시 로그인/회원가입은 필수입니다. 회원이 아니시라면 가입절차를 먼저 거쳐주세요.</li>
+  				<li>원하시는 도파민 유형에 맞는 이용권을 구매해주세요.</li>
+ 				<li>저희는 접속 제한된 숏폼 컨텐츠에 접근할 수 있는 우회 서버를 제공하는 서비스입니다.그 서버에 접속할 수 있는 링크를 보내드립니다. 구매 내역에서 확인하세요.</li>
+ 				<li>숏폼 컨텐츠의 로그인창이 뜨면 본인 아이디와 비밀번호를 입력하고 마음껏 도파민을 즐기세요!</li>
+ 				<li>제한 시간이 지나면 자동으로 로그아웃되고 접속이 차단됩니다.</li>
+			</ol>
+		</div>
+		<div class="yellowline">
+  			<div class="lineanime petit-formal-script-regular linepetit">off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit</div>
+		</div>
+		<div class="yellowline">
+  			<div class="lineanime petit-formal-script-regular linepetit">off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit</div>
+		</div>
+		<div class="yellowline">
+  			<div class="lineanime petit-formal-script-regular linepetit">off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit off limit</div>
+		</div>
+	</div>
+	</section>
+
+	<section class="greenline">
+		<div class="container3">
+			<img src="greendot.png" class="green-dot">			
+			<div class="text">
+				<div class="wrap3 container2">
+					<img src="brain.gif">
+					<div class="text">
+						<p class="petit-formal-script-regular h7">dofarming oasis</p>
+						<p class="explain-h7 overlay">하루 30분 시청 한달 고작 1회 업로드로는 부족하다고 생각하셨다면 당신은 도파민 부족입니다.<br><br>도파민 가득한 일상으로 돌아가고 싶다면 여기서 찾아보세요!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+</body>
+</html>
